@@ -32,12 +32,10 @@ namespace ALE.SimpeFlow
             //Set up database 
             Preparation();
 
-            //Create connection manager to newly created database
-            SqlConnectionManager connMan = new SqlConnectionManager("Data Source=.;Initial Catalog=demo;Integrated Security=false;User=sa;password=reallyStrongPwd123");
-
-            //Define the dataflow
+            //Define the source
             CsvSource<string[]> source = new CsvSource<string[]>("demodata.csv");
 
+            //Define the transformation
             RowTransformation<string[], Order> rowTrans = new RowTransformation<string[], Order>(
               row => new Order()
               {
@@ -46,6 +44,9 @@ namespace ALE.SimpeFlow
                   Price = int.Parse(row[4]) / 100
               });
 
+            //DbDestination needs a connection manager pointing to the right database
+            SqlConnectionManager connMan = new SqlConnectionManager("Data Source=.;Initial Catalog=demo;Integrated Security=false;User=sa;password=reallyStrongPwd123");
+            //Define the destination
             DbDestination<Order> dest = new DbDestination<Order>(connMan, "OrderTable");
 
             //Link & run flow
