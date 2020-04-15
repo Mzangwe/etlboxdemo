@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RatingOrdersExample", "Rati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContolDataFlowBasics", "ControlDataFlowBasics\ContolDataFlowBasics.csproj", "{B411B6B4-0042-4F5E-9CAD-8DD35BB17774}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpeFlow", "SimpeFlow\SimpeFlow.csproj", "{470BDC42-4F83-4CD9-8046-03E0F83B9125}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFlow", "SimpleFlow\SimpleFlow.csproj", "{470BDC42-4F83-4CD9-8046-03E0F83B9125}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DifferentSourcesDestinations", "DifferentSourcesDestinations\DifferentSourcesDestinations.csproj", "{2C516AB6-C628-4525-B590-58F3417933CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcrossFilesAndDatabases", "AcrossFilesAndDatabases\AcrossFilesAndDatabases.csproj", "{2C516AB6-C628-4525-B590-58F3417933CC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarSchema", "StarSchema\StarSchema.csproj", "{B0CD6495-4C26-41B0-BF9B-8E1FC1D93C58}"
 EndProject
